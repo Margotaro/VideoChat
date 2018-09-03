@@ -1,0 +1,20 @@
+﻿
+@model IEnumerable<VideoChat.Models.Account>
+
+ @{
+    ViewBag.Title = "Home Page";
+}
+
+<div>
+    <table>
+        @foreach (VideoChat.Models.Account b in Model)
+        {
+        <tr>
+            <td><p>@b.email</p></td>
+            <td><p>@b.password</p></td>
+            <td><p>@b.userName</p></td>
+            <td><p>@b.id</p></td>
+        </tr>
+        }
+    </table>
+</div>
